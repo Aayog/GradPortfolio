@@ -101,10 +101,20 @@
           engagement and satisfaction.
         </p>
         <figure>
-          <img src="images/koirala_poster.jpg" alt="Thesis Proposal Poster" width="300">
-          <figcaption>Thesis Proposal Poster</figcaption>
+          <a href="images/koirala_poster.jpg" target="_blank">
+            <img src="images/koirala_poster.jpg" alt="Thesis Proposal Poster" width="300" onClick="showPoster()">
+          </a>
+          <figcaption>Click to view full size</figcaption>
         </figure>
-      </div>
+        
+        <!-- JavaScript function for showing the poster -->
+        <script>
+          function showPoster() {
+            var poster = window.open("images/koirala_poster.jpg", "poster", "width=800, height=600");
+            poster.focus();
+          }
+        </script>
+              </div>
     </section>
 
     <!-- Experience -->
