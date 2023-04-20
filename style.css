@@ -4,6 +4,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Add your custom CSS here */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .navbar-nav li {
+    list-style: none;
+  }
+  
+  .navbar-brand {
+    margin-right: auto;
+  }
+  
+  /* Other CSS rules */
+  /* ... */
+  
 
 body {
   font-family: 'Arial', sans-serif;
@@ -135,3 +163,23 @@ footer {
     }
   }
   
+  /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Add a professional background gradient */
+    background-image: linear-gradient(135deg, #e0e1e4 0%, #f4f4f4 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Home Section */
+  #home img {
+    max-width: 150px; /* Adjust the size of the image */
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    /* Add a border and box-shadow to the image */
+    border: 3px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
