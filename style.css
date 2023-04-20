@@ -71,3 +71,31 @@ section figure {
     opacity: 0;
     animation: slideIn 1s ease-out 1s forwards;
 }
+.container {
+    margin-bottom: 3rem;
+  }
+  
+  figure {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* .modal-dialog {
+    max-width: 90%;
+  } */
+  
+  .navbar {
+    margin-bottom: 1.5rem;
+  }
+  
+  section {
+    padding: 2.5rem 0;
+  }
+  
+  section h2, section h3, section p, section ul, section figure {
+    margin-bottom: 1.5rem;
+  }
+  figure img {
+    display: block;
+    margin: 0 auto;
+  }
+    
