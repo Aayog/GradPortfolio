@@ -1,185 +1,73 @@
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+    font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
-/* Add your custom CSS here */
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header */
-  header {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .navbar-nav li {
-    list-style: none;
-  }
-  
-  .navbar-brand {
-    margin-right: auto;
-  }
-  
-  /* Other CSS rules */
-  /* ... */
-  
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
 }
 
 a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* Container */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Header */
-header {
-  padding: 1rem 0;
-  background: #f4f4f4;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav a {
-  padding: 0.45rem;
-  margin: 0 0.25rem;
-  color: #333;
-  transition: all 0.3s;
-}
-
-header nav a:hover {
-  background: #333;
-  color: #f4f4f4;
-}
-
-/* Main Content */
-main {
-  padding: 2rem 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-bottom: 1.5rem;
-}
-
-/* Home Section */
-#home {
-  text-align: center;
-}
-
-#home h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#home img {
-  max-width: 200px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-/* Other Sections */
-section {
-  margin-bottom: 2rem;
-}
-
-/* Experience, Research */
-section ul {
-  list-style: none;
-}
-
-section li {
-  padding: 0.5rem 0;
-}
-
-/* Contact */
-#contact p {
-  margin-bottom: 0.5rem;
-}
-
-/* Footer */
-footer {
-  padding: 1rem 0;
-  background: #f4f4f4;
-  text-align: center;
-}
-
-
-/* Mobile Navigation */
-.menu-icon {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .mobile-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 768px) {
-    header nav {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .mobile-nav {
-      display: flex;
-    }
-  
-    header nav.mobile-nav {
-      display: flex;
-    }
-  }
-  
-  /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     color: #333;
-    /* Add a professional background gradient */
-    background-image: linear-gradient(135deg, #e0e1e4 0%, #f4f4f4 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  /* Home Section */
-  #home img {
-    max-width: 150px; /* Adjust the size of the image */
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    /* Add a border and box-shadow to the image */
-    border: 3px solid #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+    text-decoration: none;
+}
+
+figure img {
+    cursor: pointer;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+section:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+section h2,
+section h3,
+section p,
+section ul,
+section figure {
+    opacity: 0;
+    animation: slideIn 1s ease-out 1s forwards;
+}
