@@ -59,7 +59,7 @@ section {
     }
 }
 
-section {
+/* section {
     opacity: 0;
     animation: fadeIn 1s ease-out 0.5s forwards;
 }
@@ -70,6 +70,18 @@ section p,
 section ul,
 section figure {
     opacity: 0;
+    animation: slideIn 1s ease-out 1s forwards;
+} */
+
+.visible {
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+.visible h2,
+.visible h3,
+.visible p,
+.visible ul,
+.visible figure {
     animation: slideIn 1s ease-out 1s forwards;
 }
 
