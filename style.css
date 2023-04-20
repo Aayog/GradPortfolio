@@ -2,7 +2,11 @@ body {
     font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background-image: linear-gradient(to bottom right, #7ea3d7, #1e6d95);
+    /* background-image: linear-gradient(to bottom right, #7ea3d7, #1e6d95); */
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 
@@ -30,10 +34,6 @@ figure img {
 
 section {
     padding: 5rem 0;
-}
-
-section:nth-child(odd) {
-    /* background-color: #9bb9d7; */
 }
 
 /* Animations */
