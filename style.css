@@ -101,3 +101,37 @@ footer {
   background: #f4f4f4;
   text-align: center;
 }
+
+
+/* Mobile Navigation */
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    header nav {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .mobile-nav {
+      display: flex;
+    }
+  
+    header nav.mobile-nav {
+      display: flex;
+    }
+  }
+  
