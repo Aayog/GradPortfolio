@@ -100,21 +100,27 @@
           gaming, tourism, and remote collaboration, where realistic and seamless immersion is crucial for user
           engagement and satisfaction.
         </p>
-        <figure>
-          <a href="images/koirala_poster.jpg" target="_blank">
-            <img src="images/koirala_poster.jpg" alt="Thesis Proposal Poster" width="300" onClick="showPoster()">
-          </a>
-          <figcaption>Click to view full size</figcaption>
-        </figure>
-        
-        <!-- JavaScript function for showing the poster -->
-        <script>
-          function showPoster() {
-            var poster = window.open("images/koirala_poster.jpg", "poster", "width=800, height=600");
-            poster.focus();
-          }
-        </script>
-              </div>
+<!-- Image thumbnail and caption -->
+<figure>
+  <img src="images/koirala_poster.jpg" alt="Thesis Proposal Poster" width="300" data-bs-toggle="modal" data-bs-target="#posterModal">
+  <figcaption>Click to view full size</figcaption>
+</figure>
+
+<!-- Poster modal -->
+<div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="posterModalLabel">Thesis Proposal Poster</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/koirala_poster.jpg" alt="Thesis Proposal Poster" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
     </section>
 
     <!-- Experience -->
