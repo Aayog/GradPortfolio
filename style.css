@@ -2,6 +2,7 @@ body {
     font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom right, #7ea3d7, #1e6d95);
 }
 
 
@@ -32,7 +33,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: #f8f9fa;
+    /* background-color: #9bb9d7; */
 }
 
 /* Animations */
