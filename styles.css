@@ -2,6 +2,11 @@ body {
     font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+    /* background-image: linear-gradient(to bottom right, #7ea3d7, #1e6d95); */
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #F8F8F8; /* Light gray */
 }
 
 
@@ -15,7 +20,7 @@ h6 {
 }
 
 a {
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 
@@ -29,10 +34,6 @@ figure img {
 
 section {
     padding: 5rem 0;
-}
-
-section:nth-child(odd) {
-    background-color: #f8f9fa;
 }
 
 /* Animations */
@@ -58,7 +59,7 @@ section:nth-child(odd) {
     }
 }
 
-section {
+/* section {
     opacity: 0;
     animation: fadeIn 1s ease-out 0.5s forwards;
 }
@@ -70,32 +71,63 @@ section ul,
 section figure {
     opacity: 0;
     animation: slideIn 1s ease-out 1s forwards;
+} */
+
+.visible {
+    animation: fadeIn 1s ease-out 0.5s forwards;
 }
+
+.visible h2,
+.visible h3,
+.visible p,
+.visible ul,
+.visible figure {
+    animation: slideIn 1s ease-out 1s forwards;
+}
+
 .container {
     margin-bottom: 3rem;
-  }
-  
-  figure {
+}
+
+figure {
     margin-bottom: 1.5rem;
-  }
-  
-  /* .modal-dialog {
+}
+
+/* .modal-dialog {
     max-width: 90%;
   } */
-  
-  .navbar {
+
+.navbar {
     margin-bottom: 1.5rem;
-  }
-  
-  section {
+}
+
+section {
     padding: 2.5rem 0;
-  }
-  
-  section h2, section h3, section p, section ul, section figure {
+}
+
+section h2,
+section h3,
+section p,
+section ul,
+section figure {
     margin-bottom: 1.5rem;
-  }
-  figure img {
+}
+
+figure img {
     display: block;
     margin: 0 auto;
-  }
-    
+}
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
