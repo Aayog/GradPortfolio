@@ -124,14 +124,3 @@ figure img {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-.section {
-    height: 100vh;
-    scroll-snap-align: start;
-}
-/* Add your section styles/colors here */
-#research {
-    background-color: lightblue;
-}
-#experience {
-    background-color: lightgreen;
-}
