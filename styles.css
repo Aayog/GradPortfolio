@@ -8,7 +8,6 @@ body {
     color: #F8F8F8; /* Light gray */
 }
 
-
 h1,
 h2,
 h3,
@@ -58,20 +57,6 @@ section {
     }
 }
 
-/* section {
-    opacity: 0;
-    animation: fadeIn 1s ease-out 0.5s forwards;
-}
-
-section h2,
-section h3,
-section p,
-section ul,
-section figure {
-    opacity: 0;
-    animation: slideIn 1s ease-out 1s forwards;
-} */
-
 .visible {
     animation: fadeIn 1s ease-out 0.5s forwards;
 }
@@ -92,12 +77,10 @@ figure {
     margin-bottom: 1.5rem;
 }
 
-/* .modal-dialog {
-    max-width: 90%;
-  } */
-
 .navbar {
     margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
 }
 
 section {
@@ -117,7 +100,6 @@ figure img {
     margin: 0 auto;
 }
 
-
 .profile-pic {
     width: 100px;
     height: 100px;
@@ -129,4 +111,11 @@ figure img {
         width: 80px;
         height: 80px;
     }
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    font-size: 0.9em;
 }
