@@ -119,3 +119,27 @@ footer {
     backdrop-filter: blur(3px);
     font-size: 0.9em;
 }
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+}
