@@ -1,112 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Aayog Koirala's software development portfolio, showcasing his skills, education, projects, and experience in various programming languages and frameworks. Explore his unique graduate student profile and learn more about his contributions to the tech industry.">
-    <title>Aayog Koirala - Software Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#home">Aayog Koirala</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#research">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cv">CV/Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home" class="vh-100 d-flex align-items-center">
-        <div class="container text-center">
-          <img src="images/prof.webp" alt="A professional photo of Aayog Koirala" class="rounded-circle profile-pic">
-          <h1>Aayog Koirala</h1>
-        </div>
-      </section>
-
-      <section id="about" class="vh-100">
-        <div class="container">
-          <h2>About</h2>
-          <h3>About Me</h3>
-          <p>
-            Hi, I'm Aayog Koirala, an ambitious software developer currently pursuing my Master's in Computer Science at Miami University, with an expected graduation in May 2024. I am proficient in various programming languages, including C, C++, Python, Java, JavaScript, PHP, and SQL, and have hands-on experience with frameworks and tools like Laravel, Node.js, Flask, Angular, Docker, S3, and Django.
-          </p>
-          <p>
-            I completed my Bachelor's degree in Computer Science at Miami University in 2022 and have taken a wide range of courses in topics such
-<!-- Contact Section -->
-<section id="contact" class="vh-100">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Feel free to contact me for any inquiries or collaboration opportunities.</p>
-          <ul class="list-unstyled contact-info">
-            <li><i class="bi bi-envelope"></i> Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
-            <li><i class="bi bi-phone"></i> Phone: +1 (123) 456-7890</li>
-            <li><i class="bi bi-geo-alt"></i> Location: New York City, USA</li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Aayog Koirala's software development portfolio, showcasing his skills, education, projects, and experience in various programming languages and frameworks. Explore his unique graduate student profile and learn more about his contributions to the tech industry.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="scripts.js" defer></script>
+  <title>Aayog Koirala - Graduate Student Profile</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Aayog Koirala</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cv">CV/Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <form action="#" method="POST" class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-          </form>
-        </div>
       </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <h1 class="mb-3">Aayog Koirala</h1>
+        <p class="lead">Graduate Student & Software Developer</p>
+        <img src="images/prof.webp" alt="A professional photo of Aayog Koirala" class="rounded-circle profile-pic">
+      </div>
+    </section>
+
+<section id="about" class="vh-100">
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <h3>About Me</h3>
+        <p>Hi, I'm Aayog Koirala, an ambitiousgraduate student and software developer with a passion for technology and innovation. I am currently pursuing my Master's degree in Computer Science at XYZ University. I have a strong background in software development, data analysis, and machine learning. I love tackling challenging problems and creating innovative solutions using various programming languages and frameworks.
+
+When I'm not immersed in coding or researching, I enjoy playing guitar, hiking, and exploring new places. I am always eager to learn new skills and share my knowledge with others, making me a collaborative team player and an effective leader.</p>
+</div>
+<div class="col-md-4">
+<h3>Skills</h3>
+<ul>
+<li>Programming: Python, Java, JavaScript, C++</li>
+<li>Web Development: HTML, CSS, Bootstrap, Node.js, React</li>
+<li>Data Analysis: R, SQL, Pandas</li>
+<li>Machine Learning: TensorFlow, Keras, PyTorch, Scikit-learn</li>
+<li>Version Control: Git, GitHub</li>
+<li>Agile Development: Scrum, Kanban</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="research" class="vh-100">
+  <div class="container">
+    <h2 class="section-title">Research</h2>
+    <p>My research interests revolve around the fields of artificial intelligence, machine learning, and natural language processing. I am particularly fascinated by the intersection of these fields, and I am currently working on a project that involves sentiment analysis and topic modeling using machine learning techniques. In the future, I hope to explore the applications of AI and machine learning in healthcare, cybersecurity, and other vital industries.</p>
+  </div>
+</section>
+
+<section id="experience" class="vh-100">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <ul>
+      <li>
+        <h3>Software Development Intern</h3>
+        <p>ABC Tech, Summer 2022</p>
+        <ul>
+          <li>Worked on a team to develop and maintain web applications using React and Node.js</li>
+          <li>Implemented new features and improved existing codebase, resulting in a 15% increase in user engagement</li>
+          <li>Collaborated with UX/UI designers to create seamless user experiences</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Research Assistant</h3>
+        <p>XYZ University, Fall 2021 - Present</p>
+        <ul>
+          <li>Conduct research on natural language processing and machine learning techniques under the supervision of Prof. John Doe</li>
+          <li>Develop Python scripts for data preprocessing, feature extraction, and model evaluation</li>
+          <li>Present findings at conferences and contribute to academic publications</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="cv" class="vh-100">
+  <div class="container">
+    <h2 class="section-title">CV/Resume</h2>
+    <p>For a more detailed account of my professional and academic background, please download my CV/resume:</p>
+    <a href="cv.pdf" download class="btn btn-primary">Download CV/Resume</a>
+  </div>
+</section>
+
+<section id="contact" class="vh-100">
+  <div class="container">
+    <h2 class2 class="section-title">Contact</h2>
+    <p>If you would like to get in touch with me, feel free to reach out via the following methods:</p>
+    <ul>
+    <li>Email: your.email@example.com</li>
+    <li>LinkedIn: www.linkedin.com/in/yourprofile</li>
+    <li>GitHub: www.github.com/yourusername</li>
+    </ul>
     </div>
-  </section>
-  <!-- Footer Section -->
-  <footer class="bg-light">
-    <div class="container">
-      <p class="text-center py-3">&copy; 2023 Aayog Koirala. All rights reserved.</p>
-    </div>
-  </footer>
-  <!-- Bootstrap JS Bundle with Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  </body>
-  </html>
+    </section>
+    
+    <footer class="text-center py-3">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+      </body>
+    </html>
