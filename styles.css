@@ -151,3 +151,17 @@ footer {
 .modal-backdrop {
     z-index: -1;
 }
+.profile-section-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.profile-section-subtitle {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
