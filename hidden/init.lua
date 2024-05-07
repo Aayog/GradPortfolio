@@ -64,6 +64,10 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Custom keymaps
 vim.keymap.set("i", "zz", "<Esc>")
+-- Save file with <C-s> in normal and insert mode
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
+vim.keymap.set("n", "<C-s>", "<cmd>:w<CR>")
+
 -- Git commit and push keymaps
 vim.keymap.set("n", "<leader>gc", "<cmd>Git commit<CR>", { desc = "Git [C]ommit" })
 vim.keymap.set("n", "<leader>gp", "<cmd>Git push<CR>", { desc = "Git [P]ush" })
