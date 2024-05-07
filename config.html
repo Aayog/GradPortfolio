@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Config</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    const envPassword = process.env.PASSWORD;
+    const enteredPassword = prompt('Enter password:');
+
+    const initLink = document.getElementById('initLink');
+    initLink.style.display = 'none'; // Hide the link initially
+
+    if (envPassword && enteredPassword === envPassword) {
+      initLink.style.display = 'inline'; // Show the link if the password is correct
+    } else {
+      window.location.replace('index.html'); // Redirect to index.html if the password is incorrect or not set
+    }
+  </script>
+</head>
+<body>
+  <p>Link to my nvim config <a href="./hidden/init.lua" id="initLink">init.lua</a> file.</p>
+</body>
+</html>
